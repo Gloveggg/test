@@ -31,6 +31,7 @@ namespace Chat2._0
             Title = Main.chatRoom.Topic;
             GetMessage();
             Update();
+
             
             
         }
@@ -42,6 +43,8 @@ namespace Chat2._0
             MessageList.ItemsSource = chatMessages.Where(i=> i.IdChatRoom == Main.chatRoom.id);
             MessageList.ScrollIntoView(chatMessages.Where(i => i.IdChatRoom == Main.chatRoom.id).LastOrDefault());
         }
+
+      
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
