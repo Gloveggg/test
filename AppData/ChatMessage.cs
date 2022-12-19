@@ -15,5 +15,6 @@ namespace Chat2._0.AppData
         public string TextMessage { get; set; }
         public DateTime DateTime { get; set; }
         public string TakeMessage { get; set; }
+        //;;
     }
 }
